@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sample Fitbit Client!</string>
+    <string name="app_name">Dribit</string>
     <string name="title_activity_main">Sample Fitbit Client!</string>
     <string name="login_with_fitbit">Login with Fitbit</string>
     <string name="scopes_granted_format">Scopes Granted: %s</string>
