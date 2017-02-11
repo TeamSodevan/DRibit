@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "928801389985",
+    "firebase_url": "https://dribit-9f2db.firebaseio.com",
+    "project_id": "dribit-9f2db",
+    "storage_bucket": "dribit-9f2db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928801389985:android:1e813aa9dcd555f2",
+        "android_client_info": {
+          "package_name": "com.fitbit.dribit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928801389985-t8cfqkgqriadfqvflm05pi7ejrhrcjrs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fitbit.dribit",
+            "certificate_hash": "4B7BC20212A26EA6C7057F564011341060883D6E"
+          }
+        },
+        {
+          "client_id": "928801389985-9vm7h1ane5pcntnsi3tbdiqomava20vn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeE55TOBvb4QesvgLhqOWew2LdqeBM0Ok"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "928801389985-9vm7h1ane5pcntnsi3tbdiqomava20vn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

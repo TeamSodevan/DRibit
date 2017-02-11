@@ -38,6 +38,8 @@ public class UserDataActivity extends AppCompatActivity implements UserService.U
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_user_data);
+        database = FirebaseDatabase.getInstance() ;
+
     }
 
     @Override
@@ -83,7 +85,6 @@ public class UserDataActivity extends AppCompatActivity implements UserService.U
 
         FireObject object = new FireObject(user.getAge(), user.getAverageDailySteps() , user.getGender() , user.getWaterUnit() , user.getWeight() , user.getHeartbeat()) ;
 
-        database = FirebaseDatabase.getInstance() ;
         reference = database.getReference("doctor").child("Dr Rajeev Bhatt").child("patients").child("Piyush-Gupta") ;
         reference.setValue(object) ;
 

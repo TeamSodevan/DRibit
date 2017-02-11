@@ -10,7 +10,7 @@ import java.util.List;
 public class User {
 
 
-    Integer[] arr = {83	,86	,93	,89	,90,78,98,78,81	,99	,81	,86,76,	96,	70,	76,	92,	81,	74,	79,	83,	89,	90,	71,	90,	82,	80,	81,	99,	91,	78,	71,	99,	78,	77,	76,	90,	80,	70,	78,	92,	78,	74,	77	,77	,93,99	,85	,98,97,	78,	77,	100,	80	,77	,80	,91	,74	,78	,74};
+    Integer[] arr = {83	,86	,93	,89	,90,78,98,78,81	,99	,81	,86,76,	96,	70,	76,	92,	81,	74,	79,	83,	89,	90,	71,	90,	82,	80,	81,	99,	91,	78,	71,	99,	78,	77,	76,	90,	80,	70,	78,	92,	78,	74,	77	,77	,93,99	,85	,98,97,	78,	77,	100, 80	,77	,80	,91	,74	,78	,74};
 
     @SerializedName("age")
     @Expose
@@ -118,16 +118,18 @@ public class User {
     @Expose
     private String weightUnit;
 
-    private HashMap<Integer ,Integer>  heartbeat ;
+    private HashMap<String ,Integer>  heartbeat ;
 
-    public HashMap<Integer, Integer> getHeartbeat() {
+    public HashMap<String, Integer> getHeartbeat() {
+
+        heartbeat = new HashMap<>();
 
             for(int i=1 ; i<=60 ; i++)
-                heartbeat.put(i, arr[i-1]) ;
+                heartbeat.put( "T"+i, arr[i-1]) ;
         return heartbeat;
     }
 
-    public void setHeartbeat(HashMap<Integer, Integer> heartbeat) {
+    public void setHeartbeat(HashMap<String, Integer> heartbeat) {
         this.heartbeat = heartbeat;
     }
 

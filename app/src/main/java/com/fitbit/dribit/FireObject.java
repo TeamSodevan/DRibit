@@ -13,15 +13,14 @@ public class FireObject {
     private String gender;
     private String waterUnit;
     private Double weight;
-    private HashMap<Integer ,Integer> heartbeat ;
-
+    private HashMap<String ,Integer> heartbeat ;
 
 
 
     public FireObject() {
     }
 
-    public FireObject(Integer age, Integer dailySteps, String gender, String waterUnit, Double weight, HashMap<Integer, Integer> heartbeat) {
+    public FireObject(Integer age, Integer dailySteps, String gender, String waterUnit, Double weight, HashMap<String ,Integer> heartbeat) {
         this.age = age;
         DailySteps = dailySteps;
         this.gender = gender;
@@ -50,7 +49,7 @@ public class FireObject {
         return weight;
     }
 
-    public HashMap<Integer, Integer> getHeartbeat() {
+    public HashMap<String , Integer> getHeartbeat() {
         return heartbeat;
     }
 }
