@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DRibit.iml" filepath="$PROJECT_DIR$/DRibit.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/fitbitapi/fitbitapi.iml" filepath="$PROJECT_DIR$/fitbitapi/fitbitapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fitbitapi/fitbitapi.iml" filepath="$PROJECT_DIR$/fitbitapi/fitbitapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fitbitauth/fitbitauth.iml" filepath="$PROJECT_DIR$/fitbitauth/fitbitauth.iml" />
       <module fileurl="file://$PROJECT_DIR$/fitbitauth/fitbitauth.iml" filepath="$PROJECT_DIR$/fitbitauth/fitbitauth.iml" />
     </modules>
   </component>

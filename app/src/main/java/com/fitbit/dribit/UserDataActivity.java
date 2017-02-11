@@ -19,8 +19,14 @@ import com.fitbit.authentication.AuthenticationManager;
 import com.fitbit.authentication.Scope;
 import com.fitbit.dribit.databinding.ActivityUserDataBinding;
 import com.google.common.base.Joiner;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class UserDataActivity extends AppCompatActivity implements UserService.UserHandler, ResourceLoadedHandler {
+
+    FirebaseDatabase database ;
+    DatabaseReference reference ;
+
 
     private ActivityUserDataBinding binding;
 
@@ -74,6 +80,14 @@ public class UserDataActivity extends AppCompatActivity implements UserService.U
         binding.setUser(user);
         binding.setLoading(false);
         binding.profileInfoView.bindProfileInfo(user);
+
+        FireObject object = new FireObject(user.getAge(), user.getAverageDailySteps() , user.getGender() , user.getWaterUnit() , user.getWeight() , user.getHeartbeat()) ;
+
+        database = FirebaseDatabase.getInstance() ;
+        reference = database.getReference("doctor").child("Dr Rajeev Bhatt").child("patients").child("Piyush-Gupta") ;
+        reference.setValue(object) ;
+
+
 
     }
     @Override
